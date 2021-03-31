@@ -8,7 +8,7 @@ def main():
     # compute
     """WRITE BELOW"""
     if x == 1:
-        x =0
+        x = 0
     else:
         x = 1
     # output
