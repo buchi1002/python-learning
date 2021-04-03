@@ -1,8 +1,6 @@
-def gcd(x: int, y: int) -> int:
-    if y > x:
-        a = x
-        x = y
-        y = a
+def gcd(Xs: list) -> int:
+    x = Xs[0]
+    y = Xs[1]
     while y != 0 or y != 1:
         b = x%y
         x = y
@@ -16,9 +14,9 @@ def gcd(x: int, y: int) -> int:
 
 def main():
     # input
-    N, M = map(int, input().split())
+    Ns = list(map(int, input().split()))
     # compute
     # output
-    print(gcd(N, M))
+    print(gcd(Ns))
 if __name__ == '__main__':
     main()
